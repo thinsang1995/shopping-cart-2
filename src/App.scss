@@ -1,0 +1,222 @@
+$shawdow-color: rgba(0, 0, 0, 0.2);
+$light-red: rgb(247, 99, 121);
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(99, 99, 99);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  background-color: $light-red;
+  padding: 0 1rem;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .nav-logo {
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px $shawdow-color;
+    flex: 70%;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex: 40%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+}
+
+.home-wrapper {
+  
+  h2 {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+
+    .cart {
+      position: relative;
+      height: 28rem;
+      width: 20rem;
+      margin: 0.5rem;
+      border-radius: 10px;
+      box-shadow: 1px 3px 3px 3px $shawdow-color;
+
+      img {
+        width: 100%;
+      }
+
+      .cart-name {
+        position: absolute;
+        bottom: 9rem;
+        left: 1rem;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .add-btn {
+        position: absolute;
+        right: 2rem;
+        bottom: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-red;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        color: white;
+        box-shadow: 1px 1px 1px $shawdow-color;
+      }
+
+      .add-btn:hover {
+        transform: scale(1.1);
+        background-color: rgb(247, 62, 89);
+      }
+
+      .add-btn:active {
+        opacity: 0.5;
+      }
+
+      .cart-info {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+.mycart-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .mycart-box {
+    margin: -1rem;
+    padding: 0;
+
+    .mycart {
+      display: flex;
+      height: 12rem;
+      border-radius: 10px;
+      box-shadow: 1px 2px 3px 3px $shawdow-color;
+      margin: 1rem 0.5rem;
+  
+      img {
+        height: 100%;
+        margin-left: 0.5rem;
+      }
+  
+      .mycart-info {
+        margin: 0 1rem;
+        padding: 5px 0;
+        height: 100%;
+  
+        p {
+          margin: 10px 0;
+        }
+        
+        .mycart-name {
+          font-size: 18px;
+          font-weight: 600;
+        }
+  
+        .mycart-desc {
+          font-size: 15px;
+  
+          p {
+            margin: 5px 0;
+          }
+        }
+  
+        .arrow-up-down {
+          width: 4rem;
+          text-align: center;
+  
+          span {
+            margin: 0.5rem;
+            cursor: pointer;
+          }
+        }
+  
+        .remove-btn {
+          background-color: $light-red;
+          color: white;
+          font-size: 13px;
+          font-weight: 600;
+          border: none;
+          outline: none;
+          border-radius: 3px;
+          padding: 0.5rem;
+          margin-top: 0.4rem;
+          box-shadow: 2px 2px $shawdow-color;
+        }
+  
+        .remove-btn:hover {
+          transform: scale(1.1);
+        }
+  
+        .remove-btn:focus {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.recipe-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+
+  .recipe-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40rem;
+  }
+
+  .checkout-btn {
+    background-color: $light-red;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px $shawdow-color;
+    width: 10rem;
+  }
+
+  .checkout-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .checkout-btn:focus {
+    opacity: 0.5;
+  }
+}
